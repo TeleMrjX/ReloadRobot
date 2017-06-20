@@ -1061,7 +1061,7 @@ MrPHPBot('sendmessage',[
 }
 elseif($update->message->new_chat_member){
 if ($tc == "group" | $tc == "supergroup"){
-if ($newchatmemberid == "378460189"){
+if ($newchatmemberid == "392671246"){
 save("data/$chat_id/locklink.txt","✖️");
 save("data/$chat_id/lockphoto.txt","✖️");
 save("data/$chat_id/lockedit.txt","✖️");
