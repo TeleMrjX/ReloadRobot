@@ -10,7 +10,7 @@ Dev ID : @NOBLEST
 GitAdress : Github.com/NobLestDev/DenyAntiSpam
 ─═ঊঈঊঈ═─╯
 */
-define('API_KEY','توکن شما');
+define('API_KEY','392671246:AAGWKk4ZM80X5NpUwX8kl3hneLNK7qf9UuE');
 //-----------------------------------------------------------------------------------------
 //فانکشن MrPHPBot :
 function MrPHPBot($method,$datas=[]){
@@ -41,11 +41,11 @@ $last_name = $message->from->last_name;
 $username = $message->from->username;
 mkdir("data/username.txt/$username");
 $textmassage = $message->text;
-$token = "توکن شما";
+$token = "392671246:AAGWKk4ZM80X5NpUwX8kl3hneLNK7qf9UuE";
 $step= file_get_contents("data/$from_id/file.txt");
 $owners= file_get_contents("data/$chat_id/owner.txt");
 $locklink= file_get_contents("data/$chat_id/locklink.txt");
-$Dev = 193930120;
+$Dev = 193156389;
 $txtt = file_get_contents('data/users.txt');
 $forward_from_chat = $update->message->forward_from_chat;
 $from_chat_id = $forward_from_chat->id;
@@ -308,7 +308,7 @@ elseif($step=="add4"){
 	'resize_keyboard'=>true,
 	'inline_keyboard'=>[
 	[
-  ['text'=>"ارسال به کانال",'callback_data'=>"sc"],['text'=>"کانال ما",'url'=>"https://telegram.me/PowerFulTeam"]
+  ['text'=>"ارسال به کانال",'callback_data'=>"sc"],['text'=>"کانال ما",'url'=>"https://telegram.me/ReloadAsLog"]
 	],
 	]
 	])
@@ -395,7 +395,7 @@ save("data/$from_id/file.txt","none");
 {
 MrPHPBot('answerCallbackQuery',[
 'callback_query_id'=>$update->callback_query->id,
-'text'=>"این ربات توسط تیم برنامه نویسی پاورفول نوشته شده است\n@PowerFulTeam",
+'text'=>"این ربات توسط تیم برنامه نویسی پاورفول نوشته شده است\n@Reload",
 ]);
 }
 elseif (strpos($textmassage, "/setowner") !== false && $from_id == $Dev) {
